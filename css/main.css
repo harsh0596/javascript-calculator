@@ -1,0 +1,74 @@
+body {
+    /*background-color: #77f473;*/
+    background: #f857a6;
+    background: linear-gradient(to left, #f4d1b3 , #f6ada7);
+    font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.main-calc {
+    margin: 7.5% auto;
+    width: 360px;
+    height: 550 px;    
+    padding: 0;
+    border-top: solid;
+    border-left: solid;
+    border-width: 1px;
+    border-color: #ba9683;
+    box-shadow: 0 0 20px #ba9683;
+    border-radius: 5px;
+}
+
+.main-calc .display {
+    /*background-color: #EEE;*/
+    border-radius: 4px 4px 0px 0px;
+    background-color: #a67860;
+    color: #FFF;
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: #ba9683;
+    text-align: right;
+    padding: 18px 20px 28px 0px;
+    width: 340px;
+    height: 50px;
+    font-size: 50px;
+}
+
+.main-calc .buttons {
+    background-color: #d8d8d8;
+    margin: 0;
+    padding: 0;
+    height: 450px;
+    border-radius: 0px 0px 4px 4px;
+    border-color: #ba9683;
+}
+
+.main-calc .buttons .row {
+    clear: left;
+}
+
+.main-calc .buttons .row div {
+    border-right: solid;
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: #989898;
+    font-size: 36px;
+    float: left;
+    height: 89px;
+    width: 89px;
+    line-height: 90px;
+    text-align: center;
+}
+
+.main-calc .buttons .row .op {
+    background-color: #f4a96b;
+}
+
+.main-calc .buttons .row .clear {
+    background-color: #BBB;
+}
+
+#bs {
+    font-size: 34px;
+}
