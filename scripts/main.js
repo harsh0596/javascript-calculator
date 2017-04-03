@@ -29,6 +29,8 @@ var solution;
 var prevSolution;
 var opEntered = false;
 var dotEntered = false;
+var history = "";
+var historyMaxLength = 26;
 
 function insertCommas(num) {
     var numtodisplay = "";
@@ -54,8 +56,12 @@ function getOp(op) {
 
 function eventParser() {
     if ($(this).attr("type") === "num") {
+        if (opEntered === false && prevSolution) {
+            prevSolution = 0;
+            clearAll();
+        }
+
         if (opEntered === false) {
-            $(".op-display").html("238842424282+_=8374334;
             if (num1.length < 10) {
                 num1 += $(this).attr("value");
             }
@@ -84,6 +90,7 @@ function eventParser() {
 
     else if ($(this).attr("type") === "op") {
         if (opEntered === false && prevSolution) {
+            clearAll();
             num1 = prevSolution;
             opEntered = true;
             op = $(this).attr("value");
@@ -102,6 +109,7 @@ function eventParser() {
         }
 
         else if (opEntered === true && num2 !== "") {
+            
         }
     }
 
@@ -125,7 +133,15 @@ function eventParser() {
         }
 
         else if ($(this).attr("value") === "back") {
-            // todo
+            if (opEntered === false && num1 !== "") {
+                num1 = num1.slice(0, -1);
+                $(".display").html(insertCommas(num1));
+            }
+
+            else if (opEntered === true && num2 !== "") {
+                num2 = num2.slice(0, -1);
+                $(".display").html(insertCommas(num2));
+            }
         }
     }
 }
