@@ -10,38 +10,68 @@ body {
 .main-calc {
     margin: 7.5% auto;
     width: 360px;
-    height: 550 px;    
+    height: 570px;    
     padding: 0;
     border-top: solid;
     border-left: solid;
     border-width: 1px;
-    border-color: #ba9683;
+    border-color: #989898;
     box-shadow: 0 0 20px #ba9683;
     border-radius: 5px;
 }
 
-.main-calc .display {
+.main-calc .display-wrap {
     /*background-color: #EEE;*/
     border-radius: 4px 4px 0px 0px;
     background-color: #a67860;
-    color: #FFF;
+    color: #000;
+    border-right: solid;
     border-bottom: solid;
     border-width: 1px;
-    border-color: #ba9683;
+    border-color: #989898;
     text-align: right;
-    padding: 18px 20px 28px 0px;
-    width: 340px;
-    height: 50px;
+    padding: 0px 20px 0px 0px;
+    width: 339px;
+    height: 120px;
+    line-height: 120px;
+    vertical-align: middle;
     font-size: 50px;
 }
 
+.display {
+    border-radius: 4px 4px 0px 0px;
+    color: #000;
+    text-align: right;
+    padding: 0px 20px 0px 0px;
+    width: 339px;
+    height: 90px;
+    line-height: 120px;
+    vertical-align: middle;
+    font-size: 50px;
+}
+
+.op-display {
+    color: #000;
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: #989898;
+    text-align: right;
+    padding: 0px 28px 0px 0px;
+    width: 330px;
+    height: 30px;
+    line-height: 20px;
+    vertical-align: middle;
+    font-size: 24px;
+}
+
 .main-calc .buttons {
-    background-color: #d8d8d8;
+    background-color: #ddd;
     margin: 0;
     padding: 0;
     height: 450px;
     border-radius: 0px 0px 4px 4px;
     border-color: #ba9683;
+    cursor:default;
 }
 
 .main-calc .buttons .row {
@@ -59,15 +89,25 @@ body {
     width: 89px;
     line-height: 90px;
     text-align: center;
+    user-select: none;
+    -moz-user-select: none;
 }
 
-.main-calc .buttons .row .op {
+.main-calc .buttons .row div:hover {
+    background-color: #BBB;
+}
+
+.main-calc .buttons .row div:active {
+    background-color: #999;
+}
+
+/*.main-calc .buttons .row .op {
     background-color: #f4a96b;
 }
 
 .main-calc .buttons .row .clear {
     background-color: #BBB;
-}
+}*/
 
 #bs {
     font-size: 34px;

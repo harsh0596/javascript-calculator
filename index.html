@@ -9,42 +9,46 @@
 
     <body>
         <div class="main-calc">
-            <div class="display"><middle>0123456789</middle></div>
+            <div class= "bg display-wrap">
+                <div class="display">0</div>
+                <div class="op-display"></div>
+            </div>
+            
             
             <div class="buttons">
                 <div class="row">
-                    <div class="clear" value="ce">CE</div>
-                    <div class="clear" value="c">C</div>
-                    <div id="bs" class="clear" value="back">⬅</div>
-                    <div class="op" value="/">÷</div>
+                    <div class="button" value="ce" type="clear">CE</div>
+                    <div class="button" value="c" type="clear">C</div>
+                    <div class="button" value="back" type="clear" id="bs">⬅</div>
+                    <div class="button" value="/" type="op">÷</div>
                 </div>
 
                 <div class="row">
-                    <div value="7">7</div>
-                    <div value="8">8</div>
-                    <div value="9">9</div>
-                    <div class="op" value="*">×</div>
+                    <div class="button" value="7" type="num">7</div>
+                    <div class="button" value="8" type="num">8</div>
+                    <div class="button" value="9" type="num">9</div>
+                    <div class="button" value="*" type="op">×</div>
                 </div>
 
                 <div class="row">
-                    <div value="4">4</div>
-                    <div value="5">5</div>
-                    <div value="6">6</div>
-                    <div class="op" value="-">-</div>
+                    <div class="button" value="4" type="num">4</div>
+                    <div class="button" value="5" type="num">5</div>
+                    <div class="button" value="6" type="num">6</div>
+                    <div class="button" value="-" type="op">-</div>
                 </div>
 
                 <div class="row">
-                    <div value="1">1</div>
-                    <div value="2">2</div>
-                    <div value="3">3</div>
-                    <div class="op" value="+">+</div>
+                    <div class="button" value="1" type="num">1</div>
+                    <div class="button" value="2" type="num">2</div>
+                    <div class="button" value="3" type="num">3</div>
+                    <div class="button" value="+" type="op">+</div>
                 </div>
 
                 <div class="row">
-                    <div value="~">~</div>
-                    <div value="0">0</div>
-                    <div value=".">.</div>
-                    <div class="op" value="=">=</div>
+                    <div class="button" value="~" type="neg">~</div>
+                    <div class="button" value="0" type="num">0</div>
+                    <div class="button" value="." type="num">.</div>
+                    <div class="button" value="=" type="solve">=</div>
                 </div>
             </div>
         </div>
