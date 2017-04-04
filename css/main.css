@@ -2,7 +2,7 @@ body {
     /*background-color: #77f473;*/
     background: #f857a6;
     background: linear-gradient(to left, #f4d1b3 , #f6ada7);
-    font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'PT Mono', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -50,7 +50,7 @@ body {
     font-size: 50px;
 }
 
-.op-display {
+.hist-display {
     color: #000;
     border-bottom: solid;
     border-width: 1px;
